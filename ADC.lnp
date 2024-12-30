@@ -1,0 +1,5 @@
+--cpu ARM7TDMI "servo_mg995.o" "lcd_4bit.o" "irq.o" "rtc.o" "ultrasonic_hc_sr04.o" "main.o" "lpc2300.o" 
+--library_type=microlib --strict --scatter "ADC.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\ADC.map" -o ADC.axf

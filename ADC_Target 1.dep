@@ -1,0 +1,24 @@
+Dependencies for Project 'ADC', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Servo_MG995.c)(0x675BD0B4)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Universidad\Keil\ARM\RV31\INC -I C:\Universidad\Keil\ARM\CMSIS\Include -I C:\Universidad\Keil\ARM\Inc\Philips -o "servo_mg995.o" --omf_browse "servo_mg995.crf" --depend "servo_mg995.d")
+I (C:\Universidad\Keil\ARM\Inc\Philips\LPC23xx.h)(0x5086BE16)
+I (C:\Universidad\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x516EA50E)
+I (C:\Universidad\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x516EA50E)
+I (LCD.h)(0x66E532C3)
+F (.\LCD_4bit.c)(0x6736D45A)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Universidad\Keil\ARM\RV31\INC -I C:\Universidad\Keil\ARM\CMSIS\Include -I C:\Universidad\Keil\ARM\Inc\Philips -o "lcd_4bit.o" --omf_browse "lcd_4bit.crf" --depend "lcd_4bit.d")
+I (C:\Universidad\Keil\ARM\Inc\Philips\LPC23xx.H)(0x5086BE16)
+I (C:\Universidad\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x516EA50E)
+F (.\IRQ.c)(0x673716E8)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Universidad\Keil\ARM\RV31\INC -I C:\Universidad\Keil\ARM\CMSIS\Include -I C:\Universidad\Keil\ARM\Inc\Philips -o "irq.o" --omf_browse "irq.crf" --depend "irq.d")
+I (C:\Universidad\Keil\ARM\Inc\Philips\LPC23xx.H)(0x5086BE16)
+F (.\RTC.c)(0x675BD0C4)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Universidad\Keil\ARM\RV31\INC -I C:\Universidad\Keil\ARM\CMSIS\Include -I C:\Universidad\Keil\ARM\Inc\Philips -o "rtc.o" --omf_browse "rtc.crf" --depend "rtc.d")
+I (C:\Universidad\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x516EA50E)
+I (C:\Universidad\Keil\ARM\Inc\Philips\LPC23xx.H)(0x5086BE16)
+I (LCD.h)(0x66E532C3)
+F (.\Ultrasonic_HC_SR04.c)(0x675BD110)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Universidad\Keil\ARM\RV31\INC -I C:\Universidad\Keil\ARM\CMSIS\Include -I C:\Universidad\Keil\ARM\Inc\Philips -o "ultrasonic_hc_sr04.o" --omf_browse "ultrasonic_hc_sr04.crf" --depend "ultrasonic_hc_sr04.d")
+I (C:\Universidad\Keil\ARM\Inc\Philips\LPC23XX.H)(0x5086BE16)
+I (C:\Universidad\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x516EA50E)
+I (LCD.h)(0x66E532C3)
+F (.\main.c)(0x675BD147)(-c --cpu ARM7TDMI -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I C:\Universidad\Keil\ARM\RV31\INC -I C:\Universidad\Keil\ARM\CMSIS\Include -I C:\Universidad\Keil\ARM\Inc\Philips -o "main.o" --omf_browse "main.crf" --depend "main.d")
+I (C:\Universidad\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x516EA50E)
+I (C:\Universidad\Keil\ARM\Inc\Philips\LPC23xx.H)(0x5086BE16)
+I (LCD.h)(0x66E532C3)
+F (.\LPC2300.s)(0x66E532C3)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1" -I C:\Universidad\Keil\ARM\RV31\INC -I C:\Universidad\Keil\ARM\CMSIS\Include -I C:\Universidad\Keil\ARM\Inc\Philips --list "LPC2300.lst" --xref -o "LPC2300.o" --depend "LPC2300.d")

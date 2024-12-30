@@ -1,0 +1,102 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Lenovo\Documents\Keil uVision4\PetFeeder\ADC.uvproj
+Project File Date:  <unknown>
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+compiling Servo_MG995.c...
+compiling LCD_4bit.c...
+compiling IRQ.c...
+compiling RTC.c...
+RTC.c(12): warning:  #1295-D: Deprecated declaration PWM_SetDutyCycle - give arg types
+RTC.c(13): warning:  #1295-D: Deprecated declaration PWM_Init - give arg types
+compiling Ultrasonic_HC_SR04.c...
+Ultrasonic_HC_SR04.c(95): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+Ultrasonic_HC_SR04.c(102): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+Ultrasonic_HC_SR04.c(110): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+main.c(12): warning:  #1295-D: Deprecated declaration PWM_SetDutyCycle - give arg types
+main.c(13): warning:  #1295-D: Deprecated declaration PWM_Init - give arg types
+main.c(14): warning:  #1295-D: Deprecated declaration updateRTCTimer - give arg types
+main.c(15): warning:  #1295-D: Deprecated declaration RTCTimerEnable - give arg types
+main.c(16): warning:  #1295-D: Deprecated declaration setupTimer - give arg types
+main.c(17): warning:  #1295-D: Deprecated declaration sendPulse - give arg types
+main.c(18): warning:  #1295-D: Deprecated declaration delayMS - give arg types
+main.c(19): warning:  #1295-D: Deprecated declaration calDistance - give arg types
+main.c(54): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+main.c(63): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+main.c(79): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+main.c(31): warning:  #550-D: variable "fed" was set but never used
+main.c(33): warning:  #177-D: variable "feeding_time_flag" was declared but never referenced
+main.c(33): warning:  #177-D: variable "pet_presence_flag" was declared but never referenced
+assembling LPC2300.s...
+linking...
+Program Size: Code=8066 RO-data=98 RW-data=52 ZI-data=1300  
+FromELF: creating hex file...
+"ADC.axf" - 0 Error(s), 19 Warning(s).
+Rebuild target 'Target 1'
+compiling Servo_MG995.c...
+compiling LCD_4bit.c...
+compiling IRQ.c...
+compiling RTC.c...
+RTC.c(12): warning:  #1295-D: Deprecated declaration PWM_SetDutyCycle - give arg types
+RTC.c(13): warning:  #1295-D: Deprecated declaration PWM_Init - give arg types
+compiling Ultrasonic_HC_SR04.c...
+Ultrasonic_HC_SR04.c(95): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+Ultrasonic_HC_SR04.c(102): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+Ultrasonic_HC_SR04.c(110): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+main.c(12): warning:  #1295-D: Deprecated declaration PWM_SetDutyCycle - give arg types
+main.c(13): warning:  #1295-D: Deprecated declaration PWM_Init - give arg types
+main.c(14): warning:  #1295-D: Deprecated declaration updateRTCTimer - give arg types
+main.c(15): warning:  #1295-D: Deprecated declaration RTCTimerEnable - give arg types
+main.c(16): warning:  #1295-D: Deprecated declaration setupTimer - give arg types
+main.c(17): warning:  #1295-D: Deprecated declaration sendPulse - give arg types
+main.c(18): warning:  #1295-D: Deprecated declaration delayMS - give arg types
+main.c(19): warning:  #1295-D: Deprecated declaration calDistance - give arg types
+main.c(54): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+main.c(63): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+main.c(79): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+main.c(31): warning:  #550-D: variable "fed" was set but never used
+main.c(33): warning:  #177-D: variable "feeding_time_flag" was declared but never referenced
+main.c(33): warning:  #177-D: variable "pet_presence_flag" was declared but never referenced
+assembling LPC2300.s...
+linking...
+Program Size: Code=8066 RO-data=98 RW-data=52 ZI-data=1300  
+FromELF: creating hex file...
+"ADC.axf" - 0 Error(s), 19 Warning(s).
+Rebuild target 'Target 1'
+compiling Servo_MG995.c...
+compiling LCD_4bit.c...
+compiling IRQ.c...
+compiling RTC.c...
+RTC.c(12): warning:  #1295-D: Deprecated declaration PWM_SetDutyCycle - give arg types
+RTC.c(13): warning:  #1295-D: Deprecated declaration PWM_Init - give arg types
+compiling Ultrasonic_HC_SR04.c...
+Ultrasonic_HC_SR04.c(95): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+Ultrasonic_HC_SR04.c(102): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+Ultrasonic_HC_SR04.c(110): warning:  #1-D: last line of file ends without a newline
+compiling main.c...
+main.c(12): warning:  #1295-D: Deprecated declaration PWM_SetDutyCycle - give arg types
+main.c(13): warning:  #1295-D: Deprecated declaration PWM_Init - give arg types
+main.c(14): warning:  #1295-D: Deprecated declaration updateRTCTimer - give arg types
+main.c(15): warning:  #1295-D: Deprecated declaration RTCTimerEnable - give arg types
+main.c(16): warning:  #1295-D: Deprecated declaration setupTimer - give arg types
+main.c(17): warning:  #1295-D: Deprecated declaration sendPulse - give arg types
+main.c(18): warning:  #1295-D: Deprecated declaration delayMS - give arg types
+main.c(19): warning:  #1295-D: Deprecated declaration calDistance - give arg types
+main.c(54): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+main.c(63): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+main.c(79): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const unsigned char *"
+main.c(31): warning:  #550-D: variable "fed" was set but never used
+main.c(33): warning:  #177-D: variable "feeding_time_flag" was declared but never referenced
+main.c(33): warning:  #177-D: variable "pet_presence_flag" was declared but never referenced
+assembling LPC2300.s...
+linking...
+Program Size: Code=8066 RO-data=98 RW-data=52 ZI-data=1300  
+FromELF: creating hex file...
+"ADC.axf" - 0 Error(s), 19 Warning(s).
