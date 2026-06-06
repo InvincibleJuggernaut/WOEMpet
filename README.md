@@ -3,17 +3,12 @@
 
 An automated pet feeder with programmable feeding times using the LPC2378 microcontroller. It makes use of a servo motor which assists in dispensing food at the required interval and an ultrasonic sensor which helps with identifying the presence of a pet. The user may pre-feed the specific times at which the food is to be dispensed along with certain buffer interval during which the presence of a pet would be monitored. This project combines real-time scheduling, pet detection via ultrasonic sensing, and automated food dispensing with servo motor control.
 
-## Overview
-
-WOEMpet is an embedded systems solution that monitors pet presence, validates feeding times, and automatically dispenses food at programmed intervals using PWM-controlled servo actuation. The system integrates multiple hardware interfaces including sensors, actuators, and communication protocols to create an intelligent feeding system.
-
 ## What It Does
 
 - **Programmable Feeding Schedule**: Set specific feeding times at which food is to be dispensed
 - **Pet Detection**: Ultrasonic HC-SR04 sensor monitors for pet presence within configurable buffer intervals
 - **Automatic Dispensing**: PWM-controlled MG995 servo motor actuates the feeder mechanism
 - **Real-Time Display**: 4-bit LCD displays current time, distance, and system status
-- **RFID Identification**: PN532 RFID reader supports optional pet card identification
 - **Timing Validation**: Ensures pets are present before dispensing food
 
 ## Hardware
@@ -33,15 +28,12 @@ The following major components are used:
   - GPIO-based trigger and echo measurement
   - Timer1 microsecond-precision measurements
   - Configurable detection range (1-30 cm)
-  
-- **PN532 RFID Module** - Optional pet identification (SPI interface)
-  - ISO14443A card polling
-  - UID extraction and validation
 
 - **4-bit LCD Display** - System feedback
   - Shows current time (HH:MM:SS)
   - Displays distance measurements
   - Status indicators
+
 
 ## Software Architecture
 
@@ -94,12 +86,6 @@ sendPulse(n);                 // Generate trigger pulse
 distance = calDistance(m);    // Measure echo time and calculate
 ```
 
-**RFID_PN532.c** - RFID Card Detection (SPI)
-- SPI0 communication at 7.5 MHz
-- InListPassiveTarget command for card polling
-- UID extraction and checksum validation
-- (Code present but optional integration)
-
 **LCD_4bit.c** - 4-bit LCD Display Driver
 - GPIO-based parallel interface
 - Character display and cursor control
@@ -113,6 +99,7 @@ distance = calDistance(m);    // Measure echo time and calculate
 - Vector table initialization
 - Hardware setup sequence
 - Entry point to main()
+
 
 ## Operating Parameters
 
@@ -134,9 +121,8 @@ Loop every second:
   1. Update RTC counter (increment seconds)
   2. Send ultrasonic trigger pulse to HC-SR04
   3. Calculate distance to pet (echo time measurement)
-  
   4. Check if current time matches feeding schedule
-  
+
   If feeding_time AND pet_present (distance < 30cm):
     - Capture current second as dispense timestamp
     - Set servo to 7.5% duty cycle (open position)
@@ -159,13 +145,3 @@ Loop every second:
 - LPC2378 JTAG/Flash programmer
 - Target board: MCB2300 Evaluation Board (or compatible)
 
-
-## Key Technical Features
-
-✅ **Interrupt-Driven RTC** - 1ms timer ticks for precise second-level scheduling  
-✅ **Pet Presence Validation** - Ultrasonic distance measurement before food release  
-✅ **PWM Servo Control** - Smooth, precise actuation with configurable duty cycles  
-✅ **Real-Time Display** - LCD shows distance, time, and feeding status  
-✅ **Modular Drivers** - Independent hardware interface modules  
-✅ **Microsecond Precision** - Timer1-based ultrasonic echo measurements  
-✅ **SPI Communication** - Optional RFID integration for pet identification  
